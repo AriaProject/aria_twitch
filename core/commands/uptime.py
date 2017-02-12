@@ -3,7 +3,7 @@ import requests, json, pprint, datetime
 
 def uptime(username):
     response = requests.get("https://api.twitch.tv/kraken/streams/dtthibaud",
-                            headers={'Client-ID': 'ptek5873bsbl4kp3ykgmofpdnh6mn6'})
+                            headers={'Client-ID': 'CLIENT-ID'})
     data = json.loads(response.content)
 
     if data['stream'] != 'null':
